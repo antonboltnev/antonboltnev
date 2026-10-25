@@ -64,27 +64,18 @@ h1 { font-size: clamp(48px, 6.8vw, 110px); line-height: .9; letter-spacing: -.07
 .text-link { font-family: var(--mono); font-size: 12px; padding-bottom: 5px; border-bottom: 1px solid currentColor; }
 .hero-meta { display: flex; gap: 26px; flex-wrap: wrap; margin-top: 68px; font-family: var(--mono); text-transform: uppercase; font-size: 10px; letter-spacing: .06em; color: #77766f; }
 
-.split-portrait { height: min(77vh, 790px); min-height: 580px; position: relative; overflow: hidden; background: #e1ded6; cursor: ew-resize; isolation: isolate; }
-.portrait-half { position: absolute; inset: 0; overflow: hidden; }
-.portrait-half img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 44%; transform: scale(1.03); }
-.portrait-warm { clip-path: inset(0 calc(100% - var(--split)) 0 0); }
-.portrait-warm::after { content: ''; position: absolute; inset: 0; background: linear-gradient(155deg, rgba(255,216,159,.02), rgba(237,79,60,.14)); mix-blend-mode: color; }
-.portrait-cool { clip-path: inset(0 0 0 var(--split)); }
-.portrait-cool img { filter: grayscale(1) contrast(1.05); }
-.portrait-cool::after { content: ''; position: absolute; inset: 0; background: rgba(29,61,86,.2); mix-blend-mode: color; }
-.split-line { position: absolute; z-index: 3; top: 0; bottom: 0; left: var(--split); width: 2px; transform: translateX(-1px); background: white; pointer-events: none; }
-.split-line span { position: absolute; top: 51%; left: 50%; transform: translate(-50%,-50%); width: 42px; height: 42px; display: grid; place-items: center; border-radius: 50%; color: var(--ink); background: var(--lime); border: 2px solid white; font-size: 17px; }
+.split-portrait { height: min(77vh, 790px); min-height: 580px; position: relative; overflow: hidden; background: #d6d6d2; isolation: isolate; }
+.portrait-image { width: 100%; height: 100%; object-fit: cover; object-position: 50% 44%; transform: scale(1.03); filter: grayscale(1) contrast(1.08); }
 .portrait-label { position: absolute; z-index: 4; top: 28px; color: white; text-transform: uppercase; text-shadow: 0 2px 12px rgba(0,0,0,.2); pointer-events: none; }
 .portrait-label small, .portrait-label strong { display: block; }
-.portrait-label small { font-family: var(--mono); font-size: 9px; letter-spacing: .16em; }
-.portrait-label strong { font-size: clamp(20px, 2.2vw, 36px); letter-spacing: -.06em; }
+.portrait-label small { font-family: var(--mono); font-size: clamp(16px, 1.4vw, 27px); letter-spacing: .12em; }
+.portrait-label strong { font-size: clamp(52px, 6vw, 108px); line-height: .9; letter-spacing: -.07em; }
 .label-left { left: 26px; }
-.label-right { right: 26px; text-align: right; }
-.portrait-hint { position: absolute; z-index: 4; bottom: 18px; left: 50%; transform: translateX(-50%); margin: 0; padding: 8px 12px; border-radius: 99px; background: rgba(23,23,20,.66); color: white; font: 9px var(--mono); text-transform: uppercase; letter-spacing: .1em; backdrop-filter: blur(7px); }
+.label-right { top: auto; right: 26px; bottom: 28px; text-align: right; }
 
 .statement { padding-top: clamp(110px, 14vw, 220px); padding-bottom: clamp(110px, 14vw, 220px); }
 .section-kicker { margin: 0 0 42px; color: #77766f; }
-.statement-copy { max-width: 1180px; margin: 0; font-size: clamp(36px, 5.7vw, 88px); line-height: 1.08; letter-spacing: -.063em; }
+.statement-copy { max-width: 1180px; margin: 0; font-size: clamp(36px, 5.7vw, 88px); line-height: 1.08; }
 .statement-copy em { font-style: normal; color: var(--red); }
 .statement-stats { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 100px; border-top: 1px solid var(--line); }
 .statement-stats div { display: flex; flex-direction: column; gap: 12px; padding: 32px 24px 0 0; border-right: 1px solid var(--line); }
@@ -173,7 +164,9 @@ h1 { font-size: clamp(48px, 6.8vw, 110px); line-height: .9; letter-spacing: -.07
   h1 { margin: 28px 0; font-size: clamp(48px, 15.5vw, 72px); }
   .hero-actions { align-items: flex-start; flex-direction: column; }
   .split-portrait { min-height: 500px; height: 68vh; }
-  .portrait-half img { object-position: 50% 40%; }
+  .portrait-image { object-position: 50% 40%; }
+  .portrait-label small { font-size: 13px; }
+  .portrait-label strong { font-size: clamp(38px, 11vw, 62px); }
   .statement-stats { grid-template-columns: 1fr; gap: 0; margin-top: 68px; }
   .statement-stats div, .statement-stats div:not(:first-child) { padding: 26px 0; border-right: 0; border-bottom: 1px solid var(--line); }
   .statement-stats div:last-child { border-bottom: 0; }

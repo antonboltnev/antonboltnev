@@ -1,5 +1,5 @@
 <script setup>
-import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
+import { onBeforeUnmount, onMounted, ref } from 'vue'
 import portrait from '../assets/me_portrait.png'
 
 const projectFiles = import.meta.glob('../assets/{alva,ag_plus}/*.png', {
@@ -62,8 +62,6 @@ const experience = [
 
 const skills = ['Vue.js', 'TypeScript', 'JavaScript', 'Nuxt.js', 'React.js', 'Node.js', 'Vite', 'Webpack', 'REST APIs', 'Jest', 'Cypress', 'SCSS / CSS']
 const sliderIndexes = ref(Object.fromEntries(projects.map((project) => [project.id, 0])))
-const split = ref(50)
-const heroMedia = ref(null)
 const menuOpen = ref(false)
 const scrolled = ref(false)
 
@@ -71,13 +69,6 @@ const setSlide = (projectId, index, total) => {
   sliderIndexes.value[projectId] = (index + total) % total
 }
 
-const moveSplit = (event) => {
-  if (!heroMedia.value) return
-  const rect = heroMedia.value.getBoundingClientRect()
-  split.value = Math.min(82, Math.max(18, ((event.clientX - rect.left) / rect.width) * 100))
-}
-
-const resetSplit = () => { split.value = 50 }
 const updateScroll = () => { scrolled.value = window.scrollY > 28 }
 const closeMenu = () => { menuOpen.value = false }
 
@@ -111,7 +102,7 @@ onBeforeUnmount(() => window.removeEventListener('scroll', updateScroll))
           <h1>
             I make websites<br />
             <span class="accent-text">behave.</span><br />
-            Usually.
+            ... usually
           </h1>
           <p class="hero-intro">I’m Anton. I’ve spent 10+ years turning very serious business requirements into things humans can actually click. Vue is home turf. TypeScript keeps me honest.</p>
           <div class="hero-actions">
@@ -123,17 +114,10 @@ onBeforeUnmount(() => window.removeEventListener('scroll', updateScroll))
           </div>
         </div>
 
-        <div ref="heroMedia" class="split-portrait" :style="{ '--split': `${split}%` }" @pointermove="moveSplit" @pointerleave="resetSplit">
-          <div class="portrait-half portrait-warm">
-            <img :src="portrait" alt="Anton Boltnev" />
-          </div>
-          <div class="portrait-half portrait-cool">
-            <img :src="portrait" alt="" aria-hidden="true" />
-          </div>
-          <div class="split-line"><span>↔</span></div>
+        <div class="split-portrait">
+          <img class="portrait-image" :src="portrait" alt="Anton Boltnev" />
           <div class="portrait-label label-left"><small>Product</small><strong>Plotter</strong></div>
           <div class="portrait-label label-right"><small>Frontend</small><strong>Wrangler</strong></div>
-          <p class="portrait-hint">Go on, wiggle it</p>
         </div>
       </section>
 
@@ -151,7 +135,7 @@ onBeforeUnmount(() => window.removeEventListener('scroll', updateScroll))
         <div class="section-heading">
           <div>
             <p class="section-kicker">Selected work · built, shipped, survived</p>
-            <h2>Things that made it<br />past localhost.</h2>
+            <h2>Things that made it<br />past <span class="accent-text">localhost</span>.</h2>
           </div>
           <p>Two products where “frontend” meant architecture, UX, product decisions, real-time headaches, and occasionally moving a button three pixels.</p>
         </div>
