@@ -21,7 +21,7 @@ const projects = [
     name: 'Alva',
     type: 'AI-powered real estate platform',
     role: 'Co-founder & Lead Frontend Engineer',
-    description: 'A complex property management workspace that turns portfolio, tenancy, finance, and document data into clear decisions. I shaped the product experience and built dashboard-heavy interfaces for analysis, operational workflows, and AI-assisted recommendations.',
+    description: 'Property management has a lot of data and roughly zero patience for mystery. Alva pulls portfolios, tenants, finances, and documents into one place, then adds AI that tries to be useful instead of writing a poem. I led the frontend and helped shape the product experience.',
     tags: ['Vue.js', 'TypeScript', 'Data visualisation', 'AI interfaces'],
     images: imagesFor('alva'),
     accent: '#2b6df3',
@@ -32,7 +32,7 @@ const projects = [
     name: 'AgilePlus',
     type: 'Real-time collaboration for agile teams',
     role: 'Co-founder & Lead Frontend Engineer',
-    description: 'A B2B collaboration suite for presentations, shared whiteboards, refinements, retrospectives, and team check-ins. I designed a scalable frontend architecture and developed the real-time product experiences that keep distributed workshops fluid and focused.',
+    description: 'Remote workshops have enough awkward silence already. AgilePlus gives teams presentations, whiteboards, refinements, retrospectives, and check-ins in one place. I built the frontend architecture and real-time bits — including the parts where three people move the same thing at once.',
     tags: ['Vue.js', 'Real-time', 'SaaS architecture', 'Collaboration'],
     images: imagesFor('ag_plus'),
     accent: '#dc3561',
@@ -44,19 +44,19 @@ const experience = [
     date: '2021 — Now',
     company: 'Mercedes-Benz.io',
     role: 'Senior Frontend Engineer',
-    detail: 'Checkout and payment modules, decentralised frontend architecture, and performance improvements across critical e-commerce flows.',
+    detail: 'Checkout and payment modules, decentralised frontend architecture, and making critical commerce flows faster without setting anything expensive on fire.',
   },
   {
     date: '2020 — 2021',
     company: 'Numan',
     role: 'Senior Frontend Engineer',
-    detail: 'Built a high-load digital health commerce platform with Vue and Nuxt, led a two-month redesign, and integrated Adyen payments.',
+    detail: 'Built a high-load digital health shop with Vue and Nuxt, led a full redesign in two months, and integrated Adyen so the money went where it was supposed to.',
   },
   {
     date: '2018 — 2020',
     company: 'Sportmaster',
     role: 'Frontend Engineer',
-    detail: 'Developed an internal call-centre platform, improved high-traffic retail sites, and mentored junior engineers.',
+    detail: 'Developed an internal call-centre platform, improved busy retail sites, and mentored junior engineers through the ancient art of reading the console.',
   },
 ]
 
@@ -107,19 +107,19 @@ onBeforeUnmount(() => window.removeEventListener('scroll', updateScroll))
     <main id="top">
       <section class="hero section-pad">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="status-dot"></span> Senior Frontend Engineer · Germany</p>
+          <p class="eyebrow"><span class="status-dot"></span> Senior frontend engineer · still curious</p>
           <h1>
-            I build products<br />
-            <span class="outline-text">and the systems</span><br />
-            behind them.
+            I make websites<br />
+            <span class="outline-text">behave.</span><br />
+            Usually.
           </h1>
-          <p class="hero-intro">I’m Anton — a frontend engineer and architect with 10+ years turning complex product ideas into fast, scalable, human interfaces.</p>
+          <p class="hero-intro">I’m Anton. I’ve spent 10+ years turning very serious business requirements into things humans can actually click. Vue is home turf. TypeScript keeps me honest.</p>
           <div class="hero-actions">
-            <a class="button button-dark" href="#work">Explore my work <span>↘</span></a>
-            <a class="text-link" href="/Anton_Boltnev_CV.pdf" download>Download CV <span>↓</span></a>
+            <a class="button button-dark" href="#work">See what escaped staging <span>↘</span></a>
+            <a class="text-link" href="/Anton_Boltnev_CV.pdf" download>The sensible PDF version <span>↓</span></a>
           </div>
           <div class="hero-meta" aria-label="Specialisms">
-            <span>Vue.js</span><span>TypeScript</span><span>Product architecture</span>
+            <span>Vue enthusiast</span><span>TypeScript</span><span>CSS negotiator</span>
           </div>
         </div>
 
@@ -131,29 +131,29 @@ onBeforeUnmount(() => window.removeEventListener('scroll', updateScroll))
             <img :src="portrait" alt="" aria-hidden="true" />
           </div>
           <div class="split-line"><span>↔</span></div>
-          <div class="portrait-label label-left"><small>Product</small><strong>Thinker</strong></div>
-          <div class="portrait-label label-right"><small>Frontend</small><strong>Architect</strong></div>
-          <p class="portrait-hint">Move to explore</p>
+          <div class="portrait-label label-left"><small>Product</small><strong>Plotter</strong></div>
+          <div class="portrait-label label-right"><small>Frontend</small><strong>Wrangler</strong></div>
+          <p class="portrait-hint">Go on, wiggle it</p>
         </div>
       </section>
 
       <section class="statement section-pad" aria-label="Profile statement">
-        <p class="section-kicker">What I do</p>
-        <p class="statement-copy">From the first architecture decision to the last performance trace, I bring <em>engineering depth</em> and <em>product clarity</em> to ambitious digital products.</p>
+        <p class="section-kicker">What I actually do</p>
+        <p class="statement-copy">I ask <em>annoying questions</em> early, build things so future-us complains less, and obsess over details <em>nobody was meant to notice.</em></p>
         <div class="statement-stats">
-          <div><strong>10+</strong><span>years in frontend</span></div>
-          <div><strong>02</strong><span>SaaS products co-founded</span></div>
-          <div><strong>Vue</strong><span>primary ecosystem</span></div>
+          <div><strong>10+</strong><span>years arguing with browsers</span></div>
+          <div><strong>02</strong><span>SaaS products helped into existence</span></div>
+          <div><strong>Vue</strong><span>the framework that sparks joy</span></div>
         </div>
       </section>
 
       <section id="work" class="work-section section-pad">
         <div class="section-heading">
           <div>
-            <p class="section-kicker">Selected work · 2026</p>
-            <h2>Products built<br />from the inside out.</h2>
+            <p class="section-kicker">Selected work · built, shipped, survived</p>
+            <h2>Things that made it<br />past localhost.</h2>
           </div>
-          <p>Founder-level ownership, from product thinking and interface design to scalable implementation.</p>
+          <p>Two products where “frontend” meant architecture, UX, product decisions, real-time headaches, and occasionally moving a button three pixels.</p>
         </div>
 
         <article v-for="project in projects" :key="project.id" class="project" :style="{ '--project-accent': project.accent }">
@@ -191,9 +191,9 @@ onBeforeUnmount(() => window.removeEventListener('scroll', updateScroll))
       <section id="experience" class="experience-section section-pad">
         <div class="experience-intro">
           <p class="section-kicker">Experience</p>
-          <h2>Engineering where the details matter.</h2>
-          <p>I’ve built and improved high-load commerce, digital health, automotive, retail, and B2B SaaS products.</p>
-          <a class="text-link" href="https://www.linkedin.com/in/anton-bolt/" target="_blank" rel="noreferrer">Full profile on LinkedIn ↗</a>
+          <h2>Places I’ve broken things. Then fixed them.</h2>
+          <p>Automotive, digital health, retail, and B2B SaaS. Different domains; surprisingly similar loading spinners.</p>
+          <a class="text-link" href="https://www.linkedin.com/in/anton-bolt/" target="_blank" rel="noreferrer">The corporate version on LinkedIn ↗</a>
         </div>
         <div class="timeline">
           <article v-for="job in experience" :key="job.company" class="timeline-item">
@@ -208,22 +208,22 @@ onBeforeUnmount(() => window.removeEventListener('scroll', updateScroll))
       </section>
 
       <section class="skills-section section-pad">
-        <p class="section-kicker">Toolkit</p>
+        <p class="section-kicker">Things I trust near production</p>
         <div class="skills-marquee" aria-label="Technical skills">
           <span v-for="skill in skills" :key="skill">{{ skill }}</span>
         </div>
         <div class="skills-foot">
-          <p>Fluent English · Native Russian · German A2 and improving</p>
-          <p>Bachelor’s degree · Moscow State University of Economics, Statistics and IT</p>
+          <p>Fluent English · Native Russian · German A2 and bravely improving</p>
+          <p>Bachelor’s degree · Yes, there was maths</p>
         </div>
       </section>
 
       <section id="contact" class="contact-section section-pad">
-        <p class="section-kicker">Let’s work together</p>
-        <h2>Have a complex product<br />that needs clarity?</h2>
+        <p class="section-kicker">End of page. Beginning of email?</p>
+        <h2>Got a tricky frontend?<br />Excellent.</h2>
         <a class="contact-email" href="mailto:anthony.boltnev@gmail.com">anthony.boltnev@gmail.com <span>↗</span></a>
         <div class="contact-footer">
-          <p>Based in Germany · Open to thoughtful conversations</p>
+          <p>Based in Germany · Powered by curiosity and an unreasonable number of browser tabs</p>
           <div>
             <a href="https://github.com/antonboltnev" target="_blank" rel="noreferrer">GitHub ↗</a>
             <a href="https://www.linkedin.com/in/anton-bolt/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
