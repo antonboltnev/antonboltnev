@@ -151,3 +151,4 @@ vite.config.ts.timestamp-*
 # Local OS and app files
 .DS_Store
 *.local
+.openai/
