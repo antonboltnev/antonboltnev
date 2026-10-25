@@ -107,10 +107,10 @@ onBeforeUnmount(() => window.removeEventListener('scroll', updateScroll))
     <main id="top">
       <section class="hero section-pad">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="status-dot"></span> Senior frontend engineer · still curious</p>
+          <p class="eyebrow"><span class="status-dot"></span> Senior frontend engineer & Architect · still curious</p>
           <h1>
             I make websites<br />
-            <span class="outline-text">behave.</span><br />
+            <span class="accent-text">behave.</span><br />
             Usually.
           </h1>
           <p class="hero-intro">I’m Anton. I’ve spent 10+ years turning very serious business requirements into things humans can actually click. Vue is home turf. TypeScript keeps me honest.</p>
