@@ -1,4 +1,5 @@
 <script setup>
+import { Analytics } from '@vercel/analytics/vue'
 import { onBeforeUnmount, onMounted, ref } from 'vue'
 import portrait from '../assets/me_portrait.png'
 
@@ -78,6 +79,7 @@ onBeforeUnmount(() => window.removeEventListener('scroll', updateScroll))
 
 <template>
   <div class="site-shell">
+    <Analytics />
     <header class="site-header" :class="{ scrolled }">
       <a class="brand" href="#top" aria-label="Anton Boltnev, home" @click="closeMenu">
         <span class="brand-mark">AB</span>
