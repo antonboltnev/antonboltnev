@@ -128,7 +128,7 @@ onBeforeUnmount(() => window.removeEventListener('scroll', updateScroll))
         <p class="statement-copy">I ask <em>annoying questions</em> early, build things so future-us complains less, and obsess over details <em>nobody was meant to notice.</em></p>
         <div class="statement-stats">
           <div><strong>10+</strong><span>years arguing with browsers</span></div>
-          <div><strong>4+</strong><span>SaaS products helped into existence</span></div>
+          <div><strong>4+</strong><span>SaaS side-products co-founded into existence</span></div>
           <div><strong>Vue & React</strong><span>the frameworks that sparks joy</span></div>
         </div>
       </section>
@@ -137,7 +137,7 @@ onBeforeUnmount(() => window.removeEventListener('scroll', updateScroll))
         <div class="section-heading">
           <div>
             <p class="section-kicker">Selected work · built, shipped, survived</p>
-            <h2>Some things that made it<br />past <span class="accent-text">localhost</span></h2>
+            <h2>Some things that made it past <span class="accent-text">localhost</span></h2>
           </div>
           <p>Two products where “frontend” meant architecture, UX, product decisions, real-time headaches, and occasionally moving a button three pixels.</p>
         </div>
