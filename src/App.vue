@@ -61,7 +61,7 @@ const experience = [
   },
 ]
 
-const skills = ['React.js','Vue.js', 'TypeScript', 'JavaScript', 'Nuxt.js', 'Node.js', 'Vite', 'Webpack', 'REST APIs', 'Jest', 'Cypress', 'SCSS / CSS']
+const skills = ['AI', 'AI', 'Generative AI', 'AI', 'Generative AI :)', 'React.js','Vue.js', 'TypeScript', 'JavaScript', 'Nuxt.js', 'Node.js', 'Vite', 'Webpack', 'REST APIs', 'Jest', 'Cypress', 'SCSS / CSS']
 const sliderIndexes = ref(Object.fromEntries(projects.map((project) => [project.id, 0])))
 const menuOpen = ref(false)
 const scrolled = ref(false)
